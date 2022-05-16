@@ -23,11 +23,19 @@ inputs:
       📦仓库: ${{ github.repository }}
   button:
     required: option
-    description: 'link button'
+    description: 'enable button'
+    default: true
+  button_name:
+    required: option
+    description: 'link button name'
     default: |
       👀查看更改👀
+  button_url:
+    required: option
+    description: 'link button url'
+    default: |
       https://github.com/${{ github.repository }}/commit/${{github.sha}}
-      
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -36,3 +44,5 @@ runs:
     - ${{ inputs.chatid }}
     - ${{ inputs.message }}
     - ${{ inputs.button }}
+    - ${{ inputs.button_name }}
+    - ${{ inputs.button_url }}
