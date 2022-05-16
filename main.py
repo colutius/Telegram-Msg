@@ -1,6 +1,6 @@
+#!/usr/bin/python
 from telegram.ext import Updater
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton
-
 import os
 
 token=os.getenv('INPUT_TOKEN')
@@ -12,6 +12,7 @@ button_url=os.getenv('INPUT_BUTTON_URL')
 
 updater = Updater(token=token)
 dispatcher = updater.dispatcher
+
 if(button):
     dispatcher.bot.send_message(chat_id=chatid, text=str(message), reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(button_name, url=button_url)]]))
 else:

@@ -24,6 +24,4 @@ jobs:
         message: |
           自定义消息测试1
           自定义消息测试2
-        button: |
-          自定义按钮
-          https://huguoyang.cn
+        button: false
