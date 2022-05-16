@@ -11,6 +11,10 @@ button_url=sys.argv[-1]
 for i in sys.argv[3:-2]:
     message+=i+'\n\n'
 
+os.getenv('INPUT_message')
+os.environ.get('INPUT_message')
+message = os.environ['INPUT_message']
+
 updater = Updater(token=token)
 dispatcher = updater.dispatcher
 
