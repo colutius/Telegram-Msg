@@ -1,7 +1,5 @@
-import os
 
-os.getenv('message')
-os.environ.get('message')
-message = os.environ['message']
+import sys
 
-print(message)
+print (len(sys.argv))
+print (str(sys.argv))
