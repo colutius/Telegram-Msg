@@ -1,11 +1,10 @@
 # Telegram-Msg
 
-
-Send message to Telegram
+通过actions向telegram发送消息
 
 [![test](https://github.com/colutius/Telegram-Msg/actions/workflows/main.yml/badge.svg)](https://github.com/colutius/Telegram-Msg/actions/workflows/main.yml)
 
-## Usage
+## 开始使用
 
 发送一条自定义消息
 
@@ -42,8 +41,6 @@ jobs:
     token: ${{ secrets.TELEGRAM_TOKEN }}
     chatid: ${{ secrets.TELEGRAM_TO }}
 ```
-
-![workflow](./images/telegram-workflow.png)
 
 ## 可选参数
 
