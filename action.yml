@@ -4,12 +4,23 @@ branding:
   icon: 'message-circle'
   color: 'blue'
 inputs:
-  message:
+  token:
     required: true
-    description: '测试，随便写点啥'
-
+    description: 'telegram bot token'
+  chatid:
+    required: true
+    description: 'telegram chat id'
+  message:
+    required: option
+    description: 'send message'
+  button:
+    required: option
+    description: 'link button'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - ${{ inputs.token }}
+    - ${{ inputs.chatid }}
     - ${{ inputs.message }}
+    - ${{ inputs.button }}
