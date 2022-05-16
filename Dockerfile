@@ -3,6 +3,6 @@ FROM python:latest
 RUN pip install python-telegram-bot
 
 COPY main.py /main.py
-RUN chmod 777 /main.py
+RUN chmod +x /main.py
 
-RUN python /main.py
+ENTRYPOINT ["python","/main.py"]
