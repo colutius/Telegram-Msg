@@ -1,5 +1,5 @@
-name: 'Colutius'
-description: 'Linux 迷你生态园'
+name: 'Telegram Msg'
+description: 'Send Message To Telegram'
 branding:
   icon: 'message-circle'
   color: 'blue'
