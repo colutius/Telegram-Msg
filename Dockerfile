@@ -8,4 +8,5 @@ RUN pacman -S python --noconfirm
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
+COPY main.py /main.py
 RUN python main.py
