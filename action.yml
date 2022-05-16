@@ -28,13 +28,11 @@ inputs:
   button_name:
     required: option
     description: 'link button name'
-    default: |
-      👀查看更改👀
+    default: 👀查看更改👀
   button_url:
     required: option
     description: 'link button url'
-    default: |
-      https://github.com/${{ github.repository }}/commit/${{github.sha}}
+    default: https://github.com/${{ github.repository }}/commit/${{github.sha}}
 
 runs:
   using: 'docker'
