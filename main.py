@@ -4,9 +4,12 @@ import sys
 
 token=sys.argv[1]
 chatid=sys.argv[2]
-message=sys.argv[3:-2]
+message=""
 button_name=sys.argv[-2]
 button_url=sys.argv[-1]
+
+for i in sys.argv[3:-2]:
+    message+=i+'\n\n'
 
 updater = Updater(token=token)
 dispatcher = updater.dispatcher
