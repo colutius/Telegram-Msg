@@ -1,0 +1,15 @@
+name: 'Colutius'
+description: 'Linux 迷你生态园'
+branding:
+  icon: 'message-circle'
+  color: 'blue'
+inputs:
+  message:
+    required: true
+    description: '测试，随便写点啥'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.message }}
