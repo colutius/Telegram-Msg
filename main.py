@@ -11,4 +11,4 @@ button_url=sys.argv[-1]
 updater = Updater(token=token)
 dispatcher = updater.dispatcher
 
-dispatcher.bot.send_message(chat_id=chatid, text=message, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(button_name, url=button_url)]]))
+dispatcher.bot.send_message(chat_id=chatid, text=str(message), reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(button_name, url=button_url)]]))

@@ -2,7 +2,7 @@ name: test
 on: [push]
 jobs:
   test-default:
-    name: Build
+    name: test-default
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -11,3 +11,19 @@ jobs:
       with:
         token: ${{ secrets.TELEGRAM_TOKEN }}
         chatid: ${{ secrets.TELEGRAM_TO }}
+  test-custom:
+    name: test-custom
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: test
+      uses: ./
+      with:
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        chatid: ${{ secrets.TELEGRAM_TO }}
+        message: |
+          自定义消息测试1
+          自定义消息测试2
+        button: |
+          自定义按钮
+          https://huguoyang.cn
