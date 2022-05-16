@@ -17,7 +17,7 @@ jobs:
     name: sendMsg
     runs-on: ubuntu-latest
     steps:
-    - uses: colutius/Telegram-Msg@master
+    - uses: colutius/Telegram-Msg@main
       with:
         token: ${{ secrets.TELEGRAM_TOKEN }}
         chatid: ${{ secrets.TELEGRAM_TO }}
@@ -37,7 +37,7 @@ jobs:
 不加可选参数发送默认消息
 
 ```yml
-- uses: colutius/Telegram-Msg@master
+- uses: colutius/Telegram-Msg@main
   with:
     token: ${{ secrets.TELEGRAM_TOKEN }}
     chatid: ${{ secrets.TELEGRAM_TO }}
