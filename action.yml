@@ -13,9 +13,21 @@ inputs:
   message:
     required: option
     description: 'send message'
+    default: |
+      👇新的提交👇
+          
+      👤提交人: [${{ github.actor }}]
+      
+      📄提交信息: ${{ github.event.commits[0].message }}
+      
+      📦仓库: ${{ github.repository }}
   button:
     required: option
     description: 'link button'
+    default: |
+      👀查看更改👀
+      https://github.com/${{ github.repository }}/commit/${{github.sha}}
+      
 runs:
   using: 'docker'
   image: 'Dockerfile'
