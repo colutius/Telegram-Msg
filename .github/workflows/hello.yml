@@ -2,7 +2,7 @@ name: hello
 
 on:
   schedule:
-  - cron:  '30 15 * * *'
+  - cron:  '0 16 * * *'
 jobs:
   get_comment:
     runs-on: ubuntu-latest
