@@ -10,4 +10,4 @@ jobs:
       uses: ./
       with:
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        chatid: ${{ secrets.TELEGRAM_TO }}
+        chatid: ${{ secrets.TELEGRAM_TO_ME }}
