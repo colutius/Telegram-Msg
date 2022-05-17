@@ -1,6 +1,4 @@
-FROM python:latest
-
-RUN pip install python-telegram-bot
+FROM ambitionecho/telegram-msg:latest
 
 COPY main.py /main.py
 RUN chmod +x /main.py
