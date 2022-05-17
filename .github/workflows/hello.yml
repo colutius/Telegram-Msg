@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: get yiyan
-        run: |
-          echo "YIYAN=$(curl 'https://v1.hitokoto.cn?c=i' | jq -r .hitokoto)" >> $GITHUB_ENV
+      run: |
+        echo "YIYAN=$(curl 'https://v1.hitokoto.cn?c=i' | jq -r .hitokoto)" >> $GITHUB_ENV
     - uses: colutius/Telegram-Msg@main
       with:
         token: ${{ secrets.TELEGRAM_TOKEN }}
