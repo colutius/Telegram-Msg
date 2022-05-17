@@ -1,3 +1,3 @@
 FROM ambitionecho/telegram-msg:latest
 
-ENTRYPOINT ["python","/main.py"]
+ENTRYPOINT ["python3","/main.py"]
