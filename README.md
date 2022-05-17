@@ -45,7 +45,7 @@ jobs:
 ## 可选参数
 
 * button: `true`或`false`，是否添加链接按钮，默认为`true`
-* button_name: 按钮名称，默认为👀查看更改👀
+* button_name: 按钮名称，默认为`👀查看更改👀`
 * button_url: 按钮链接地址，默认为`https://github.com/${{ github.repository }}/commit/${{github.sha}}`
 
 
