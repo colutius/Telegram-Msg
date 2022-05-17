@@ -13,7 +13,7 @@ button_url=os.getenv('INPUT_BUTTON_URL')
 updater = Updater(token=token)
 dispatcher = updater.dispatcher
 
-if(button):
+if(button=="true"):
     dispatcher.bot.send_message(chat_id=chatid, text=str(message), reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(button_name, url=button_url)]]))
 else:
     dispatcher.bot.send_message(chat_id=chatid, text=str(message))
