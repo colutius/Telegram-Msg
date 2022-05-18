@@ -2,9 +2,9 @@ name: hello
 
 on:
   schedule:
-  - cron:  '0 16 * * *'
+  - cron:  '30 15 * * *'
 jobs:
-  get_comment:
+  send:
     runs-on: ubuntu-latest
     steps:
     - name: get yiyan
