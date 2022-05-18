@@ -6,11 +6,8 @@ jobs:
     name: test-default
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-      with:
-        ref: main
     - name: test
-      uses: ./
+      uses: colutius/Telegram-Msg@main
       with:
         token: ${{ secrets.TELEGRAM_TOKEN }}
         chatid: ${{ secrets.TELEGRAM_TO_ME }}
