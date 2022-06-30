@@ -11,6 +11,17 @@ jobs:
       with:
         token: ${{ secrets.TELEGRAM_TOKEN }}
         chatid: ${{ secrets.TELEGRAM_TO_ME }}
+        message: |
+          👇新的提交👇
+          
+          👤提交人: [${{ github.actor }}]
+
+          📄提交信息: ${{ github.event.commits[0].message }}
+
+          📦仓库: ${{ github.repository }}
+        button: false
+        button_name: 👀查看更改👀
+        button_url: https://github.com/${{ github.repository }}/commit/${{github.sha}}
         is_notify: false
         is_preview: false
   docker:
