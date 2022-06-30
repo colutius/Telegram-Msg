@@ -33,7 +33,15 @@ inputs:
     required: option
     description: 'link button url'
     default: https://github.com/${{ github.repository }}/commit/${{github.sha}}
-
+  is_notify:
+    required: option
+    description: 'notify or not'
+    default: true
+  is_preview:
+    required: option
+    description: 'web page preview or not'
+    default: true
+    
 runs:
   using: 'docker'
   image: 'Dockerfile'
