@@ -24,15 +24,15 @@ else:
 
 # notify
 if (is_notify == "true"):
-    is_notify = True
-else:
     is_notify = False
+else:
+    is_notify = True
 
 # preview
 if (is_preview == "true"):
-    is_preview = True
-else:
     is_preview = False
+else:
+    is_preview = True
 
 dispatcher.bot.send_message(chat_id=chatid,
                             text=str(message),
