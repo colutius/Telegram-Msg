@@ -52,3 +52,5 @@ runs:
     - ${{ inputs.button }}
     - ${{ inputs.button_name }}
     - ${{ inputs.button_url }}
+    - ${{ inputs.is_notify }}
+    - ${{ inputs.is_preview }}
