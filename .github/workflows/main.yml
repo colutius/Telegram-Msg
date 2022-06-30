@@ -11,7 +11,7 @@ jobs:
       with:
         token: ${{ secrets.TELEGRAM_TOKEN }}
         chatid: ${{ secrets.TELEGRAM_TO_ME }}
-        is_notify: false
+        is_notify: true
         is_preview: false
   docker:
     name: publish docker
