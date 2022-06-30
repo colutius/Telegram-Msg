@@ -35,11 +35,11 @@ inputs:
     default: https://github.com/${{ github.repository }}/commit/${{github.sha}}
   is_notify:
     required: option
-    description: 'notify or not'
+    description: 'notify or not '
     default: true
   is_preview:
     required: option
-    description: 'web page preview or not'
+    description: 'web page preview or not '
     default: true
     
 runs:
